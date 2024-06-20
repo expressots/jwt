@@ -7,14 +7,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
  * @see {@link https://vitest.dev/config/}
  */
 export default defineConfig({
-  plugins: [
-    tsconfigPaths(),
-    codecovVitePlugin({
-      enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
-      bundleName: "expresso-ts-jwt-coverage",
-      uploadToken: process.env.CODECOV_TOKEN,
-    }),
-  ],
+  plugins: [tsconfigPaths()],
   test: {
     globals: true,
     environment: "node",
