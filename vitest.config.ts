@@ -11,7 +11,7 @@ export default defineConfig({
     tsconfigPaths(),
     codecovVitePlugin({
       enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
-      bundleName: "expresso-ts-adapter-express-coverage",
+      bundleName: "expresso-ts-jwt-coverage",
       uploadToken: process.env.CODECOV_TOKEN,
     }),
   ],
@@ -22,7 +22,7 @@ export default defineConfig({
     exclude: ["**/node_modules/**", "**/test/**", "**/lib/**"],
     coverage: {
       all: true,
-      include: ["**/src/**"],
+      include: ["./src/**"],
       exclude: ["**/node_modules/**", "**/lib/**", "**/test/**", "**/index.ts/**"],
       thresholds: {
         global: {

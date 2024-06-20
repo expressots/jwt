@@ -28,10 +28,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/expressots/<<repo_name>>"
+    "url": "https://github.com/expressots/jwt"
   },
   "bugs": {
-    "url": "https://github.com/expressots/<<repo_name>>/issues"
+    "url": "https://github.com/expressots/jwt/issues"
   },
   "publishConfig": {
     "access": "public"
