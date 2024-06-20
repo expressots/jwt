@@ -73,7 +73,7 @@
     "reflect-metadata": "0.2.2"
   },
   "devDependencies": {
-    "@codecov/vite-plugin": "0.0.1-beta.6",
+    "@codecov/vite-plugin": "0.0.1-beta.10",
     "@commitlint/cli": "18.0.0",
     "@commitlint/config-conventional": "17.7.0",
     "@release-it/conventional-changelog": "7.0.1",
