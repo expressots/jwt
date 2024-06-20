@@ -30,7 +30,7 @@ jobs:
         run: npm run build
 
       - name: ExpressoTS Tests
-        working-directory: packages/core
+        working-directory: ./
         run: npm run test
         env:
           CI: true
