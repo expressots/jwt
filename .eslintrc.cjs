@@ -8,7 +8,7 @@ module.exports = {
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: ["./tsconfig.cjs.json", "./tsconfig.esm.json", "./tsconfig.json"],
+    project: ["./tsconfig.json"],
   },
   plugins: ["@typescript-eslint"],
   root: true,
@@ -22,6 +22,7 @@ module.exports = {
     ".eslintrc.cjs",
     "**/__tests__/*.spec.ts",
     "vitest.config.ts",
+    "coverage/*",
   ],
   rules: {
     "@typescript-eslint/adjacent-overload-signatures": "error",
