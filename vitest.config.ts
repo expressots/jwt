@@ -1,6 +1,5 @@
-import { defineConfig } from "vitest/config";
-import { codecovVitePlugin } from "@codecov/vite-plugin";
 import tsconfigPaths from "vite-tsconfig-paths";
+import { defineConfig } from "vitest/config";
 
 /**
  * @see {@link https://vitejs.dev/config/}
