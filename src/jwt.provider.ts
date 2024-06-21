@@ -1,6 +1,5 @@
 import { IProvider, Report } from "@expressots/core";
 import { injectable } from "inversify";
-import pkg from "../package.json";
 import * as jwt from "jsonwebtoken";
 import { SignOptions, VerifyOptions, DecodeOptions, Secret } from "./jwt.interface";
 
@@ -11,10 +10,10 @@ import { SignOptions, VerifyOptions, DecodeOptions, Secret } from "./jwt.interfa
  */
 @injectable()
 export class JwtProvider implements IProvider {
-  readonly name: string = pkg.name;
-  readonly version: string = pkg.version;
-  readonly author: string = pkg.author;
-  readonly repo: string = pkg.repository.url;
+  readonly name: string = "Jwt provider";
+  readonly version: string = "1.0.0";
+  readonly author: string = "Richard Zampieri";
+  readonly repo: string = "https://github.com/expressots/jwt";
   private report: Report;
   private secret: Secret | null = null;
   private defaultSignOptions?: SignOptions;
